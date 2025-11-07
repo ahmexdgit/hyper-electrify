@@ -20,68 +20,7 @@ const funfactData = [
   { title: "Skilled Team Members", number: "121" },
   { title: "Most Valuable Awards", number: "15" },
 ];
-const postData = [
-  {
-    date: "05 Mar 2023",
-    title: "How to keep fear from ruining your art business with confident",
-    thumbnailSrc: "/images/studio-agency/post_2.jpeg",
-    href: "/blog/blog-details",
-  },
-  {
-    date: "07 Mar 2023",
-    title: "Artistic mind will be great for creation anything",
-    thumbnailSrc: "/images/studio-agency/post_1.jpeg",
-    href: "/blog/blog-details",
-  },
-  {
-    date: "03 Mar 2023",
-    title: "How to keep fear from ruining your art business with confident",
-    thumbnailSrc: "/images/studio-agency/post_3.jpeg",
-    href: "/blog/blog-details",
-  },
-  {
-    date: "02 Mar 2023",
-    title: "How to keep fear from ruining your art business with confident",
-    thumbnailSrc: "/images/studio-agency/post_4.jpeg",
-    href: "/blog/blog-details",
-  },
-];
-const brandList = [
-  {
-    logoSrc: "/images/marketing-agency/brand_1.svg",
-    logoAlt: "Brand",
-  },
-  {
-    logoSrc: "/images/marketing-agency/brand_2.svg",
-    logoAlt: "Brand",
-  },
-  {
-    logoSrc: "/images/marketing-agency/brand_3.svg",
-    logoAlt: "Brand",
-  },
-  {
-    logoSrc: "/images/marketing-agency/brand_4.svg",
-    logoAlt: "Brand",
-  },
-];
-const brandListDark = [
-  {
-    logoSrc: "/images/marketing-agency/brand_1_dark.svg",
-    logoAlt: "Brand",
-  },
-  {
-    logoSrc: "/images/marketing-agency/brand_2_dark.svg",
-    logoAlt: "Brand",
-  },
-  {
-    logoSrc: "/images/marketing-agency/brand_3_dark.svg",
-    logoAlt: "Brand",
-  },
-  {
-    logoSrc: "/images/marketing-agency/brand_4_dark.svg",
-    logoAlt: "Brand",
-  },
-];
+
 const testimonialData = [
   {
     text: "HEIPL played a pivotal role in helping us deploy Pakistan’s first large-scale EV charging stations. Their technical expertise and operational reliability have made our clean mobility initiative a true success.",
@@ -110,41 +49,6 @@ const testimonialData = [
   },
 ];
 
-// const portfolioData = [
-//   {
-//     thumbnailSrc: "/images/digital-agency/portfolio_1.jpeg",
-//     miniTitle: "React Development",
-//     title: "Corporate Webly <br />Application",
-//     subTitle:
-//       "From designing the user interface to coding the functionality and ensuring the <br /> website is secure and optimized for performance.",
-//     href: "/portfolio/portfolio-details",
-//   },
-//   {
-//     thumbnailSrc: "/images/digital-agency/portfolio_2.jpeg",
-//     miniTitle: "UI/UX Design",
-//     title: "eCommerce User <br />Interface Design",
-//     subTitle:
-//       "From designing the user interface to coding the functionality and ensuring the <br /> website is secure and optimized for performance.",
-//     href: "/portfolio/portfolio-details",
-//   },
-//   {
-//     thumbnailSrc: "/images/digital-agency/portfolio_3.jpeg",
-//     miniTitle: "3D Render",
-//     title: "Multi Dimension <br />Two Square",
-//     subTitle:
-//       "From designing the user interface to coding the functionality and ensuring the <br /> website is secure and optimized for performance.",
-//     href: "/portfolio/portfolio-details",
-//   },
-//   {
-//     thumbnailSrc: "/images/digital-agency/portfolio_4.jpeg",
-//     miniTitle: "Animation",
-//     title: "Animated Abstract <br />3D Background",
-//     subTitle:
-//       "From designing the user interface to coding the functionality and ensuring the <br /> website is secure and optimized for performance.",
-//     href: "/portfolio/portfolio-details",
-//   },
-// ];
-
 const portfolioData = [
   {
     thumbnailSrc: "/images/portfolio/proj1.jpg",
@@ -152,7 +56,7 @@ const portfolioData = [
     title: "National Five-Star <br />Fan Installation Program",
     subTitle:
       "A Government of Pakistan–backed initiative under the National Energy Efficiency Program, replacing 88 million conventional fans with Five-Star Rated Energy Efficient models to cut power use by 60%.",
-    href: "/portfolio/national-energy-efficiency-program",
+    href: "/portfolio/energy-efficiency-program",
   },
   {
     thumbnailSrc: "/images/portfolio/proj2.jpg",
@@ -160,7 +64,7 @@ const portfolioData = [
     title: "Electric Bike Export <br />to Spain",
     subTitle:
       "HEIPL is spearheading Pakistan’s entry into the global e-mobility export market by supplying locally assembled electric bikes to Spain — promoting sustainable urban transport and green job creation.",
-    href: "/portfolio/e-bike-export-spain",
+    href: "/portfolio/electric-bike-export",
   },
   {
     thumbnailSrc: "/images/portfolio/proj3.jpg",
@@ -176,7 +80,7 @@ const portfolioData = [
     title: "Lithium Battery <br />Manufacturing Collaboration (China)",
     subTitle:
       "Partnering with top Chinese energy storage firms to establish local lithium-ion battery manufacturing plants in Pakistan, enabling EV and renewable energy storage independence.",
-    href: "/portfolio/lithium-battery-collaboration",
+    href: "/portfolio/lithium-battery-manufacturing",
   },
   {
     thumbnailSrc: "/images/portfolio/proj5.jpg",
@@ -184,7 +88,7 @@ const portfolioData = [
     title: "Solar Panel <br />Manufacturing Collaboration (China)",
     subTitle:
       "HEIPL and Chinese solar technology partners are setting up local panel manufacturing and assembly lines, increasing accessibility and affordability of solar power across Pakistan.",
-    href: "/portfolio/solar-manufacturing-collaboration",
+    href: "/portfolio/solar-panel-manufacturing",
   },
   {
     thumbnailSrc: "/images/portfolio/proj6.jpg",
@@ -192,7 +96,7 @@ const portfolioData = [
     title: "Electric Bus Supply <br />to IIUI Campus",
     subTitle:
       "HEIPL provides and operates electric shuttle buses for International Islamic University Islamabad (IIUI), reducing emissions and advancing sustainable campus mobility.",
-    href: "/portfolio/electric-buses-iiui",
+    href: "/portfolio/ev-buses-iiui",
   },
 ];
 

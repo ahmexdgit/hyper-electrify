@@ -1,3 +1,4 @@
-export const pageTitle = title => {
-  return (document.title = title + ' - Creative Agency React App');
+export const pageTitle = (title) => {
+  return (document.title =
+    title + " - Hyper Electrify Infrastructure Pvt. Ltd");
 };
