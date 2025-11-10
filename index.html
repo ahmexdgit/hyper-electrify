@@ -29,8 +29,16 @@
   <meta name="theme-color" content="#0072ff" />
 
   <!-- Preload main font or logo for faster render -->
-  <link rel="preload" as="image" href="/logo.png" />
+  <link rel="preload" as="image" href="/image/logo.png" />
 
+  <script>
+    // Check for basic JS support
+    try {
+      eval('const test = () => {}');
+    } catch (e) {
+      document.write('<div style="padding: 20px; text-align: center;">Please update your browser to view this site.</div>');
+    }
+  </script>
   <!-- Schema Markup for SEO -->
   <script type="application/ld+json">
       {
