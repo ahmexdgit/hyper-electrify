@@ -1,110 +1,110 @@
-import React from 'react';
-import HeroStyle5 from '../Hero/HeroStyle5';
-import Cta from '../Cta';
-import Spacing from '../Spacing';
-import SectionHeading from '../SectionHeading';
-import PostCarousel from '../Slider/PostCarousel';
-import PricingTableList from '../PricingTable/PricingTableList';
-import TestimonialSliderStyle2 from '../Slider/TestimonialSliderStyle2';
-import FunFact from '../FunFact';
-import VideoModal from '../VideoModal';
-import IconboxStyle4 from '../IconBox/IconboxStyle4';
-import Card from '../Card';
-import CardStyle2 from '../Card/CardStyle2';
-import SectionHeadingStyle2 from '../SectionHeading/SectionHeadingStyle2';
-import IconBoxStyle5 from '../IconBox/IconBoxStyle5';
-import BrandCarousel from '../Slider/BrandCarousel';
-import { pageTitle } from '../../helpers/PageTitle';
+import React from "react";
+import HeroStyle5 from "../Hero/HeroStyle5";
+import Cta from "../Cta";
+import Spacing from "../Spacing";
+import SectionHeading from "../SectionHeading";
+import PostCarousel from "../Slider/PostCarousel";
+import PricingTableList from "../PricingTable/PricingTableList";
+import TestimonialSliderStyle2 from "../Slider/TestimonialSliderStyle2";
+import FunFact from "../FunFact";
+import VideoModal from "../VideoModal";
+import IconboxStyle4 from "../IconBox/IconboxStyle4";
+import Card from "../Card";
+import CardStyle2 from "../Card/CardStyle2";
+import SectionHeadingStyle2 from "../SectionHeading/SectionHeadingStyle2";
+import IconBoxStyle5 from "../IconBox/IconBoxStyle5";
+import BrandCarousel from "../Slider/BrandCarousel";
+import { pageTitle } from "../../helpers/PageTitle";
 const brandData = [
-  { logoSrc: '/images/tech-startup/brand_1.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_2.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_3.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_4.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_5.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_6.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_1.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_2.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_3.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_4.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_5.svg', alt: 'Brand' },
-  { logoSrc: '/images/tech-startup/brand_6.svg', alt: 'Brand' },
+  { logoSrc: "/images/tech-startup/brand_1.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_2.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_3.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_4.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_5.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_6.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_1.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_2.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_3.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_4.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_5.svg", alt: "Brand" },
+  { logoSrc: "/images/tech-startup/brand_6.svg", alt: "Brand" },
 ];
 const funfactData = [
-  { title: 'Happy Customers', number: '22k' },
-  { title: 'Work’s Completed', number: '15k' },
-  { title: 'Skilled Team Members', number: '121' },
-  { title: 'Most Valuable Awards', number: '15' },
+  { title: "Happy Customers", number: "22k" },
+  { title: "Work’s Completed", number: "15k" },
+  { title: "Skilled Team Members", number: "121" },
+  { title: "Most Valuable Awards", number: "15" },
 ];
 const testimonialData = [
   {
-    text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
-    avatarName: 'Ansari Patron',
-    avatarDesignation: 'CEO at Delta',
+    text: "Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.",
+    avatarName: "Ansari Patron",
+    avatarDesignation: "CEO at Delta",
   },
   {
-    text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
-    avatarName: 'Jhon Doe',
-    avatarDesignation: 'Manager at Delta',
+    text: "Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.",
+    avatarName: "Jhon Doe",
+    avatarDesignation: "Manager at Delta",
   },
   {
-    text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
-    avatarName: 'Ramatam Coo',
-    avatarDesignation: 'MD at Delta',
+    text: "Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.",
+    avatarName: "Ramatam Coo",
+    avatarDesignation: "MD at Delta",
   },
 ];
 const postData = [
   {
-    thumbnailSrc: '/images/creative-agency/post_1.jpeg',
-    title: 'How to keep fear from ruining your art business with confident',
-    date: '07 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_1.jpeg",
+    title: "How to keep fear from ruining your art business with confident",
+    date: "07 Mar 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_2.jpeg',
-    title: 'Artistic mind will be great for creation anything',
-    date: '22 Apr 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_2.jpeg",
+    title: "Artistic mind will be great for creation anything",
+    date: "22 Apr 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_3.jpeg',
-    title: 'AI will take over all job for human within few years',
-    date: '13 May 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_3.jpeg",
+    title: "AI will take over all job for human within few years",
+    date: "13 May 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_4.jpeg',
-    title: 'Your agency need to replace some artistic mind people',
-    date: '15 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_4.jpeg",
+    title: "Your agency need to replace some artistic mind people",
+    date: "15 Mar 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_1.jpeg',
-    title: 'How to keep fear from ruining your art business with confident',
-    date: '07 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_1.jpeg",
+    title: "How to keep fear from ruining your art business with confident",
+    date: "07 Mar 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_2.jpeg',
-    title: 'Artistic mind will be great for creation anything',
-    date: '22 Apr 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_2.jpeg",
+    title: "Artistic mind will be great for creation anything",
+    date: "22 Apr 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_3.jpeg',
-    title: 'AI will take over all job for human within few years',
-    date: '13 May 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_3.jpeg",
+    title: "AI will take over all job for human within few years",
+    date: "13 May 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_4.jpeg',
-    title: 'Your agency need to replace some artistic mind people',
-    date: '15 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_4.jpeg",
+    title: "Your agency need to replace some artistic mind people",
+    date: "15 Mar 2023",
+    url: "/blog/blog-details",
   },
 ];
 
 export default function TechStartupPage() {
-  pageTitle('Tech Startup Agency');
+  pageTitle("Tech Startup Agency");
   return (
     <>
       <HeroStyle5
@@ -266,9 +266,9 @@ export default function TechStartupPage() {
         />
       </div>
       <Spacing lg="125" md="70" />
-      <div className="container">
+      {/* <div className="container">
         <FunFact data={funfactData} />
-      </div>
+      </div> */}
       <Spacing lg="125" md="70" />
       <TestimonialSliderStyle2 data={testimonialData} />
       <section className="cs_shape_animation_2">

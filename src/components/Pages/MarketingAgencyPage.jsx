@@ -1,282 +1,282 @@
-import React from 'react';
-import Spacing from '../Spacing';
-import HeroStyle2 from '../Hero/HeroStyle2';
-import Brands from '../Brands';
-import Marquee from '../Marquee';
-import Cta from '../Cta';
-import SectionHeading from '../SectionHeading';
-import Accordion from '../Accordion';
-import PostCarousel from '../Slider/PostCarousel';
-import TestimonialSlider from '../Slider/TestimonialSlider';
-import Award from '../Award';
-import VideoModal from '../VideoModal';
-import ServiceSlider from '../Slider/ServiceSlider';
-import AboutStyle2 from '../About/AboutStyle2';
-import FunFact from '../FunFact';
-import Button from '../Button';
-import CaseStudy from '../CaseStudy';
-import { pageTitle } from '../../helpers/PageTitle';
+import React from "react";
+import Spacing from "../Spacing";
+import HeroStyle2 from "../Hero/HeroStyle2";
+import Brands from "../Brands";
+import Marquee from "../Marquee";
+import Cta from "../Cta";
+import SectionHeading from "../SectionHeading";
+import Accordion from "../Accordion";
+import PostCarousel from "../Slider/PostCarousel";
+import TestimonialSlider from "../Slider/TestimonialSlider";
+import Award from "../Award";
+import VideoModal from "../VideoModal";
+import ServiceSlider from "../Slider/ServiceSlider";
+import AboutStyle2 from "../About/AboutStyle2";
+import FunFact from "../FunFact";
+import Button from "../Button";
+import CaseStudy from "../CaseStudy";
+import { pageTitle } from "../../helpers/PageTitle";
 const servideData = [
   {
-    iconSrc: '/images/marketing-agency/service_icon_1.svg',
-    title: 'On page optimization',
+    iconSrc: "/images/marketing-agency/service_icon_1.svg",
+    title: "On page optimization",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_2.svg',
-    title: 'Marketing Consulting',
+    iconSrc: "/images/marketing-agency/service_icon_2.svg",
+    title: "Marketing Consulting",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_3.svg',
-    title: 'Video Campaign',
+    iconSrc: "/images/marketing-agency/service_icon_3.svg",
+    title: "Video Campaign",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_4.svg',
-    title: 'Branding Design',
+    iconSrc: "/images/marketing-agency/service_icon_4.svg",
+    title: "Branding Design",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_1.svg',
-    title: 'On page optimization',
+    iconSrc: "/images/marketing-agency/service_icon_1.svg",
+    title: "On page optimization",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_2.svg',
-    title: 'Marketing Consulting',
+    iconSrc: "/images/marketing-agency/service_icon_2.svg",
+    title: "Marketing Consulting",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_3.svg',
-    title: 'Video Campaign',
+    iconSrc: "/images/marketing-agency/service_icon_3.svg",
+    title: "Video Campaign",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
   {
-    iconSrc: '/images/marketing-agency/service_icon_4.svg',
-    title: 'Branding Design',
+    iconSrc: "/images/marketing-agency/service_icon_4.svg",
+    title: "Branding Design",
     subTitle:
       "A one provide moment. Interesting an a up se you side it all the and don't listen. Confident picture she one the what I nor least.",
-    btnText: 'See More',
-    btnUrl: '/service/service-details',
+    btnText: "See More",
+    btnUrl: "/service/service-details",
   },
 ];
 const funfactData = [
-  { title: 'Happy Customers', number: '22k' },
-  { title: 'Work’s Completed', number: '15k' },
-  { title: 'Skilled Team Members', number: '121' },
-  { title: 'Most Valuable Awards', number: '15' },
+  { title: "Happy Customers", number: "22k" },
+  { title: "Work’s Completed", number: "15k" },
+  { title: "Skilled Team Members", number: "121" },
+  { title: "Most Valuable Awards", number: "15" },
 ];
 const awardData = [
   {
-    brand: 'Behance',
-    title: 'UI/UX design of the month',
+    brand: "Behance",
+    title: "UI/UX design of the month",
     subTitle:
-      'Accusamus et iusto odio dignissimos ducimus qui blanditiis fedarals praesentium voluptatum deleniti atque corrupti quos dolores',
-    date: 'December 12, 2023',
-    awardImgUrl: '/images/creative-agency/award_img_1.svg',
+      "Accusamus et iusto odio dignissimos ducimus qui blanditiis fedarals praesentium voluptatum deleniti atque corrupti quos dolores",
+    date: "December 12, 2023",
+    awardImgUrl: "/images/creative-agency/award_img_1.svg",
   },
   {
-    brand: 'Awwwards',
-    title: 'CSS awards design',
+    brand: "Awwwards",
+    title: "CSS awards design",
     subTitle:
-      'Accusamus et iusto odio dignissimos ducimus qui blanditiis fedarals praesentium voluptatum deleniti atque corrupti quos dolores',
-    date: 'January 05, 2022',
-    awardImgUrl: '/images/creative-agency/award_img_2.svg',
+      "Accusamus et iusto odio dignissimos ducimus qui blanditiis fedarals praesentium voluptatum deleniti atque corrupti quos dolores",
+    date: "January 05, 2022",
+    awardImgUrl: "/images/creative-agency/award_img_2.svg",
   },
   {
-    brand: 'Google',
-    title: 'Website of the day',
+    brand: "Google",
+    title: "Website of the day",
     subTitle:
-      'Accusamus et iusto odio dignissimos ducimus qui blanditiis fedarals praesentium voluptatum deleniti atque corrupti quos dolores',
-    date: 'March 20, 2021',
-    awardImgUrl: '/images/creative-agency/award_img_3.svg',
+      "Accusamus et iusto odio dignissimos ducimus qui blanditiis fedarals praesentium voluptatum deleniti atque corrupti quos dolores",
+    date: "March 20, 2021",
+    awardImgUrl: "/images/creative-agency/award_img_3.svg",
   },
 ];
 const testimonialData = [
   {
-    text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
-    avatarName: 'Ansari Patron',
-    avatarDesignation: 'CEO at Delta',
+    text: "Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.",
+    avatarName: "Ansari Patron",
+    avatarDesignation: "CEO at Delta",
   },
   {
-    text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
-    avatarName: 'Jhon Doe',
-    avatarDesignation: 'Manager at Delta',
+    text: "Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.",
+    avatarName: "Jhon Doe",
+    avatarDesignation: "Manager at Delta",
   },
   {
-    text: 'Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.',
-    avatarName: 'Ramatam Coo',
-    avatarDesignation: 'MD at Delta',
+    text: "Zivans Motion Graphics did an excellent job on my video related projects. The motion graphics added an extra layer of polish and really brought the video to life. I highly recommend their high quality services and work.",
+    avatarName: "Ramatam Coo",
+    avatarDesignation: "MD at Delta",
   },
 ];
 const caseStudyData = [
   {
-    thumbnailSrc: '/images/marketing-agency/case_study_1.jpeg',
-    title: 'Digital marketing management',
-    category: 'Marketing',
-    number: '01',
-    href: '/case-study-details',
+    thumbnailSrc: "/images/marketing-agency/case_study_1.jpeg",
+    title: "Digital marketing management",
+    category: "Marketing",
+    number: "01",
+    href: "/case-study-details",
   },
   {
-    thumbnailSrc: '/images/marketing-agency/case_study_2.jpeg',
-    title: 'Digital marketing management',
-    category: 'Marketing',
-    number: '02',
-    href: '/case-study-details',
+    thumbnailSrc: "/images/marketing-agency/case_study_2.jpeg",
+    title: "Digital marketing management",
+    category: "Marketing",
+    number: "02",
+    href: "/case-study-details",
   },
   {
-    thumbnailSrc: '/images/marketing-agency/case_study_3.jpeg',
-    title: 'Digital marketing management',
-    category: 'Marketing',
-    number: '03',
-    href: '/case-study-details',
+    thumbnailSrc: "/images/marketing-agency/case_study_3.jpeg",
+    title: "Digital marketing management",
+    category: "Marketing",
+    number: "03",
+    href: "/case-study-details",
   },
   {
-    thumbnailSrc: '/images/marketing-agency/case_study_4.jpeg',
-    title: 'Digital marketing management',
-    category: 'Marketing',
-    number: '04',
-    href: '/case-study-details',
+    thumbnailSrc: "/images/marketing-agency/case_study_4.jpeg",
+    title: "Digital marketing management",
+    category: "Marketing",
+    number: "04",
+    href: "/case-study-details",
   },
 ];
 const postData = [
   {
-    thumbnailSrc: '/images/creative-agency/post_1.jpeg',
-    title: 'How to keep fear from ruining your art business with confident',
-    date: '07 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_1.jpeg",
+    title: "How to keep fear from ruining your art business with confident",
+    date: "07 Mar 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_2.jpeg',
-    title: 'Artistic mind will be great for creation anything',
-    date: '22 Apr 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_2.jpeg",
+    title: "Artistic mind will be great for creation anything",
+    date: "22 Apr 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_3.jpeg',
-    title: 'AI will take over all job for human within few years',
-    date: '13 May 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_3.jpeg",
+    title: "AI will take over all job for human within few years",
+    date: "13 May 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_4.jpeg',
-    title: 'Your agency need to replace some artistic mind people',
-    date: '15 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_4.jpeg",
+    title: "Your agency need to replace some artistic mind people",
+    date: "15 Mar 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_1.jpeg',
-    title: 'How to keep fear from ruining your art business with confident',
-    date: '07 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_1.jpeg",
+    title: "How to keep fear from ruining your art business with confident",
+    date: "07 Mar 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_2.jpeg',
-    title: 'Artistic mind will be great for creation anything',
-    date: '22 Apr 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_2.jpeg",
+    title: "Artistic mind will be great for creation anything",
+    date: "22 Apr 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_3.jpeg',
-    title: 'AI will take over all job for human within few years',
-    date: '13 May 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_3.jpeg",
+    title: "AI will take over all job for human within few years",
+    date: "13 May 2023",
+    url: "/blog/blog-details",
   },
   {
-    thumbnailSrc: '/images/creative-agency/post_4.jpeg',
-    title: 'Your agency need to replace some artistic mind people',
-    date: '15 Mar 2023',
-    url: '/blog/blog-details',
+    thumbnailSrc: "/images/creative-agency/post_4.jpeg",
+    title: "Your agency need to replace some artistic mind people",
+    date: "15 Mar 2023",
+    url: "/blog/blog-details",
   },
 ];
 const faqData = [
   {
-    title: '01. I need your services and how can i contact you throw email?',
+    title: "01. I need your services and how can i contact you throw email?",
     content:
-      'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+      "Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
   },
   {
-    title: '02. What are the different types of service we provide?',
+    title: "02. What are the different types of service we provide?",
     content:
-      'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+      "Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
   },
   {
-    title: '03. What are the different stages of the working process?',
+    title: "03. What are the different stages of the working process?",
     content:
-      'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+      "Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
   },
   {
-    title: '04. What is the difference between direct and digital marketing?',
+    title: "04. What is the difference between direct and digital marketing?",
     content:
-      'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+      "Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
   },
   {
-    title: '05. How can i payment proceed after complete project?',
+    title: "05. How can i payment proceed after complete project?",
     content:
-      'Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.',
+      "Marketing eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
   },
 ];
 const brandList = [
   {
-    logoSrc: '/images/marketing-agency/brand_1.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_1.svg",
+    logoAlt: "Brand",
   },
   {
-    logoSrc: '/images/marketing-agency/brand_2.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_2.svg",
+    logoAlt: "Brand",
   },
   {
-    logoSrc: '/images/marketing-agency/brand_3.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_3.svg",
+    logoAlt: "Brand",
   },
   {
-    logoSrc: '/images/marketing-agency/brand_4.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_4.svg",
+    logoAlt: "Brand",
   },
 ];
 const brandListDark = [
   {
-    logoSrc: '/images/marketing-agency/brand_1_dark.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_1_dark.svg",
+    logoAlt: "Brand",
   },
   {
-    logoSrc: '/images/marketing-agency/brand_2_dark.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_2_dark.svg",
+    logoAlt: "Brand",
   },
   {
-    logoSrc: '/images/marketing-agency/brand_3_dark.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_3_dark.svg",
+    logoAlt: "Brand",
   },
   {
-    logoSrc: '/images/marketing-agency/brand_4_dark.svg',
-    logoAlt: 'Brand',
+    logoSrc: "/images/marketing-agency/brand_4_dark.svg",
+    logoAlt: "Brand",
   },
 ];
 
 export default function MarketingAgencyPage({ darkMode }) {
-  pageTitle('Marketing Agency');
+  pageTitle("Marketing Agency");
   return (
     <>
       <HeroStyle2
@@ -285,7 +285,7 @@ export default function MarketingAgencyPage({ darkMode }) {
         subTitle="Our agency offers a comprehensive suite of lots services, including Branding, Advertising, Social marketing, Video making, and Marketing analysis."
         thumbnailSrc="/images/marketing-agency/hiro_img.jpeg"
         mikeIcon={
-          darkMode ? '/images/icons/mike_dark.svg' : '/images/icons/mike.svg'
+          darkMode ? "/images/icons/mike_dark.svg" : "/images/icons/mike.svg"
         }
       />
       <section className="cs_p76_full_width" id="service">
@@ -304,18 +304,18 @@ export default function MarketingAgencyPage({ darkMode }) {
           subTitle="Our team, specializing in strategic digital marketing, partners with the world's leading brands. Breaking from the norm, we push boundaries and merge imaginative thinking, consumer behavior,
         and data-driven design with advanced technology to deliver unparalleled brand experiences."
           featureList={[
-            'Designing content with AI power',
-            'Trending marketing tools involve',
-            'Powerful market strategy use',
+            "Designing content with AI power",
+            "Trending marketing tools involve",
+            "Powerful market strategy use",
           ]}
           btnText="Learn More"
           btnUrl="/about"
         />
       </section>
-      <div className="container">
+      {/* <div className="container">
         <Spacing lg="125" md="70" />
         <FunFact data={funfactData} />
-      </div>
+      </div> */}
       <section>
         <Spacing lg="118" md="70" />
         <div className="container">
@@ -343,11 +343,11 @@ export default function MarketingAgencyPage({ darkMode }) {
       </div>
       <TestimonialSlider
         layeredImages={[
-          '/images/marketing-agency/layer_img_1.png',
-          '/images/marketing-agency/layer_img_2.png',
-          '/images/marketing-agency/layer_img_3.png',
-          '/images/marketing-agency/layer_img_4.png',
-          '/images/marketing-agency/layer_img_5.png',
+          "/images/marketing-agency/layer_img_1.png",
+          "/images/marketing-agency/layer_img_2.png",
+          "/images/marketing-agency/layer_img_3.png",
+          "/images/marketing-agency/layer_img_4.png",
+          "/images/marketing-agency/layer_img_5.png",
         ]}
         data={testimonialData}
       />

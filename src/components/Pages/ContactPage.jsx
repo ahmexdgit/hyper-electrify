@@ -8,23 +8,14 @@ export default function ContactPage() {
   pageTitle("Contact");
   return (
     <>
-      <Spacing
-        lg="70"
-        md="70"
-      />
-      <Spacing
-        lg="140"
-        md="80"
-      />
+      <Spacing lg="70" md="70" />
+      <Spacing lg="140" md="80" />
       <SectionHeadingStyle3
         title="Get in touch for more <br/>information and support"
         subTitle="Contact"
         shape="shape_6"
       />
-      <Spacing
-        lg="75"
-        md="60"
-      />
+      <Spacing lg="75" md="60" />
       <section>
         <div className="container">
           <div className="row align-items-center cs_gap_y_45">
@@ -37,21 +28,23 @@ export default function ContactPage() {
               <ul className="cs_mp0 cs_contact_info">
                 <li>
                   <h3 className="cs_fs_29 cs_semibold">Email:</h3>
-                  <p className="mb-0"> hyperelectrify@gmail.com</p>
+                  <p className="mb-0"> info@hyperelectrify.com</p>
                 </li>
                 <li>
                   <h3 className="cs_fs_29 cs_semibold">Phone:</h3>
-                  <p className="mb-0">+92 51 8737 216 | +92 334 4056055 </p>
+                  <p className="mb-0">
+                    +92 51 6107 993 | +92 51 8737 216 | +92 3285082059
+                  </p>
                 </li>
                 <li>
                   <h3 className="cs_fs_29 cs_semibold">Address:</h3>
                   <p className="mb-0">
-                    ▶ Office 17, First Floor, Al Hameed Plaza, G-11 Markaz,
-                    Islamabad, Pakistan
-                  </p>
-                  <p className="mb-0">
                     ▶ Plaza 153-A, Second Floor, Block D, Civic Centre, Bahria
                     Town, Rawalpindi
+                  </p>
+                  <p className="mb-0">
+                    ▶ Office 17, First Floor, Al Hameed Plaza, G-11 Markaz,
+                    Islamabad, Pakistan
                   </p>
                 </li>
               </ul>
@@ -90,14 +83,10 @@ export default function ContactPage() {
                   <label className="cs_fs_21 cs_semibold cs_primary_color">
                     Project brief
                   </label>
-                  <textarea
-                    cols={30}
-                    rows={5}
-                    className="cs_form_field"
-                  />
+                  <textarea cols={30} rows={5} className="cs_form_field" />
                   <div className="cs_height_38 cs_height_lg_25" />
                   <button className="cs_btn cs_style_1">
-                    Learn More{" "}
+                    Send Message
                     <span>
                       <i>
                         <Icon icon="fa6-solid:arrow-right" />

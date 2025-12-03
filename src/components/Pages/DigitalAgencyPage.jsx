@@ -14,6 +14,9 @@ import IconBoxStyle2 from "../IconBox/IconBoxStyle2";
 import PortfolioSlider from "../Slider/PortfolioSlider";
 import PricingTableList from "../PricingTable/PricingTableList";
 import { pageTitle } from "../../helpers/PageTitle";
+import HeroStyle2 from "../Hero/HeroStyle2";
+import HeroStyle5 from "../Hero/HeroStyle5";
+import AboutStyle2 from "../About/AboutStyle2";
 const funfactData = [
   { title: "Happy Customers", number: "22k" },
   { title: "Projects Completed", number: "15k" },
@@ -115,26 +118,17 @@ export default function DigitalAgencyPage({ darkMode }) {
         videoSrc="https://www.youtube.com/embed/VcaAVWtP48A"
         bgUrl="/images/hero-image.jpg"
       />
-      <div className="cs_primary_bg">
-        <Spacing
-          lg="125"
-          md="80"
-        />
+      {/* <div className="cs_primary_bg">
+        <Spacing lg="125" md="80" />
         <div className="container">
           <FunFact
             data={funfactData}
             colorVariant="cs_color_1"
           />
         </div>
-        <Spacing
-          lg="125"
-          md="80"
-        />
-      </div>
-      <Spacing
-        lg="150"
-        md="80"
-      />
+        <Spacing lg="125" md="80" />
+      </div> */}
+      <Spacing lg="150" md="80" />
 
       <AboutStyle4
         thumbnailSrc="/images/home-about.jpg"
@@ -149,10 +143,7 @@ With strong partnerships across government and industry, HEIPL is committed to r
         btnUrl="/service"
       />
 
-      <Spacing
-        lg="150"
-        md="80"
-      />
+      <Spacing lg="150" md="80" />
       <AboutStyle5
         thumbnailSrc="/images/what-we-do.jpg"
         imgSrc="/images/what-we-do-second.jpg"
@@ -163,41 +154,29 @@ With strong partnerships across government and industry, HEIPL is committed to r
 
 Our services cover everything from EV infrastructure and solar manufacturing to battery systems and energy efficiency consultancy — ensuring Pakistan’s smooth transition to a sustainable and electrified future.`}
         progressBarList={[
-          { title: "Charge Panels & EV Network Management", percentage: "95" },
+          { title: "Charge Panels & EV Network Management" },
           {
             title: "Electric Mobility Solutions (Buses, Bikes, SUVs)",
-            percentage: "90",
           },
           {
             title: "Solar Panel Manufacturing & Integration",
-            percentage: "88",
           },
           {
             title: "Energy Efficiency & Consultancy Programs",
-            percentage: "92",
           },
         ]}
       />
 
-      <Spacing
-        lg="150"
-        md="80"
-      />
+      <Spacing lg="150" md="80" />
       <section className="cs_primary_bg">
-        <Spacing
-          lg="143"
-          md="75"
-        />
+        <Spacing lg="143" md="75" />
         <div className="container">
           <SectionHeading
             title="Exceeding expectations our <br />service is our promise"
             subTitle="Services"
             variantColor="cs_white_color"
           />
-          <Spacing
-            lg="85"
-            md="45"
-          />
+          <Spacing lg="85" md="45" />
           {/* <div className="row cs_gap_y_45">
             <div className="col-lg-3 col-sm-6">
               <IconBoxStyle2
@@ -280,7 +259,7 @@ Our services cover everything from EV infrastructure and solar manufacturing to 
             {/* Electric Mobility */}
             <div className="col-lg-3 col-sm-6">
               <IconBoxStyle2
-                iconSrc="/images/digital-agency/service_icon_4.svg"
+                iconSrc="/images/digital-agency/service_icon_3.svg"
                 title="Electric Mobility"
                 subTitle="Accelerating Pakistan’s shift to e-bikes, buses, and SUVs — clean, efficient, and future-ready."
                 features={[
@@ -296,7 +275,7 @@ Our services cover everything from EV infrastructure and solar manufacturing to 
             {/* Solar Energy */}
             <div className="col-lg-3 col-sm-6">
               <IconBoxStyle2
-                iconSrc="/images/digital-agency/service_icon_4.svg"
+                iconSrc="/images/digital-agency/service_icon_2.svg"
                 title="Solar Panel Solutions"
                 subTitle="Empowering homes and industries with locally produced, high-efficiency solar technology."
                 features={[
@@ -312,7 +291,7 @@ Our services cover everything from EV infrastructure and solar manufacturing to 
             {/* Energy Efficiency */}
             <div className="col-lg-3 col-sm-6">
               <IconBoxStyle2
-                iconSrc="/images/digital-agency/service_icon_4.svg"
+                iconSrc="/images/digital-agency/service_icon_1.svg"
                 title="Energy Efficiency Consultancy"
                 subTitle="Delivering national-scale energy optimization and efficiency improvement programs."
                 features={[
@@ -326,34 +305,19 @@ Our services cover everything from EV infrastructure and solar manufacturing to 
             </div>
           </div>
         </div>
-        <Spacing
-          lg="143"
-          md="75"
-        />
+        <Spacing lg="143" md="75" />
       </section>
       <section>
-        <Spacing
-          lg="143"
-          md="75"
-        />
+        <Spacing lg="143" md="75" />
         <div className="container">
-          <SectionHeading
-            title="Some featured work"
-            subTitle="Portfolio"
-          />
-          <Spacing
-            lg="85"
-            md="45"
-          />
+          <SectionHeading title="Some featured work" subTitle="Portfolio" />
+          <Spacing lg="85" md="45" />
         </div>
         <PortfolioSlider data={portfolioData} />
-        <Spacing
-          lg="150"
-          md="80"
-        />
+        <Spacing lg="150" md="80" />
       </section>
 
-      <TestimonialSlider
+      {/* <TestimonialSlider
         layeredImages={[
           "/images/digital-agency/layer_img_1.png",
           "/images/digital-agency/layer_img_2.png",
@@ -362,7 +326,7 @@ Our services cover everything from EV infrastructure and solar manufacturing to 
           "/images/digital-agency/layer_img_5.png",
         ]}
         data={testimonialData}
-      />
+      /> */}
       <Cta
         title="Is there a specific project or goal <br/>that you have in mind?"
         btnText="Contact Us"
@@ -371,23 +335,14 @@ Our services cover everything from EV infrastructure and solar manufacturing to 
         variant="cs_type_1"
       />
 
-      <Spacing
-        lg="135"
-        md="70"
-      />
+      <Spacing lg="135" md="70" />
       <Marquee text="EV Charging • Solar Energy • Battery Manufacturing • Clean Mobility • Energy Efficiency • Smart Infrastructure • Sustainability" />
 
-      <Spacing
-        lg="84"
-        md="50"
-      />
+      <Spacing lg="84" md="50" />
       {/* <div className="container">
         <Brands data={darkMode ? brandListDark : brandList} />
       </div> */}
-      <Spacing
-        lg="135"
-        md="80"
-      />
+      <Spacing lg="135" md="80" />
     </>
   );
 }

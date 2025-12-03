@@ -108,14 +108,8 @@ export default function AboutPage({ darkMode }) {
   pageTitle("About");
   return (
     <>
-      <Spacing
-        lg="70"
-        md="70"
-      />
-      <Spacing
-        lg="140"
-        md="80"
-      />
+      <Spacing lg="70" md="70" />
+      <Spacing lg="140" md="80" />
       <SectionHeadingStyle3
         title="Pioneering Pakistan’s Journey Toward Clean Energy and Electric Mobility"
         subTitle="About Us"
@@ -123,10 +117,7 @@ export default function AboutPage({ darkMode }) {
         shape="shape_1"
       />
 
-      <Spacing
-        lg="75"
-        md="60"
-      />
+      <Spacing lg="75" md="60" />
       <AboutStyle4
         thumbnailSrc="/images/about/about1.jpg"
         miniTitle="Company Info"
@@ -138,17 +129,11 @@ Our mission is to build a cleaner, smarter, and more self-reliant Pakistan power
         btnUrl="/service"
       />
 
-      <Spacing
-        lg="125"
-        md="70"
-      />
-      <div className="container">
+      <Spacing lg="125" md="70" />
+      {/* <div className="container">
         <FunFact data={funfactData} />
-      </div>
-      <Spacing
-        lg="125"
-        md="70"
-      />
+      </div> */}
+      <Spacing lg="125" md="70" />
       <AboutStyle5
         thumbnailSrc="/images/what-we-do.jpg"
         imgSrc="/images/what-we-do-second.jpg"
@@ -174,22 +159,13 @@ Our mission is to build a cleaner, smarter, and more self-reliant Pakistan power
           },
         ]}
       />
-      <Spacing
-        lg="150"
-        md="80"
-      />
+      <Spacing lg="150" md="80" />
       <section className="cs_primary_bg">
-        <Spacing
-          lg="140"
-          md="70"
-        />
+        <Spacing lg="140" md="70" />
 
         <div className="container">
           <SectionHeadingStyle5 title="How We Work" />
-          <Spacing
-            lg="85"
-            md="45"
-          />
+          <Spacing lg="85" md="45" />
           <div className="cs_working_process_wrap cs_center">
             <div className="cs_working_process">
               {/* Step 1 - Research & Assessment */}
@@ -225,44 +201,26 @@ Our mission is to build a cleaner, smarter, and more self-reliant Pakistan power
           </div>
         </div>
 
-        <Spacing
-          lg="150"
-          md="80"
-        />
+        <Spacing lg="150" md="80" />
       </section>
       <section className="cs_p76_full_width">
-        <Spacing
-          lg="143"
-          md="75"
-        />
-        <div className="container">
+        <Spacing lg="143" md="75" />
+        {/* <div className="container">
           <SectionHeading
             title="Meet our experts team behind <br />the zivan agency"
             subTitle="Our Team"
           />
-          <Spacing
-            lg="85"
-            md="45"
-          />
-        </div>
-        <TeamSlider data={teamData} />
+          <Spacing lg="85" md="45" />
+        </div> */}
+        {/* <TeamSlider data={teamData} /> */}
       </section>
-      <Spacing
-        lg="135"
-        md="70"
-      />
-      <Marquee text="We Create Design - Build App - Website - Branding - SEO" />
-      <Spacing
-        lg="84"
-        md="50"
-      />
+      <Spacing lg="135" md="70" />
+      <Marquee text="EV Charging • Solar Energy • Battery Manufacturing • Clean Mobility • Energy Efficiency • Smart Infrastructure • Sustainability" />
+      <Spacing lg="84" md="50" />
       {/* <div className="container">
         <Brands data={darkMode ? brandListDark : brandList} />
       </div> */}
-      <Spacing
-        lg="135"
-        md="80"
-      />
+      <Spacing lg="135" md="80" />
     </>
   );
 }

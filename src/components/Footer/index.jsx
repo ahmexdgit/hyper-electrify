@@ -2,9 +2,9 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import { Link } from "react-router-dom";
 const addressDataList = [
-  "Office 17, First Floor, Al Hameed Plaza, G-11 Markaz, Islamabad, Pakistan",
-  "+92 51 8737 216 ",
-  "hyperelectrify@gmail.com",
+  "2nd Floor, Plaza#153-A, Civic Center, Phase 4, Bahria Town, Islamabad",
+  "+92 3285082059",
+  "info@hyperelectrify.com",
 ];
 const serviceMenuList = [
   {
@@ -135,10 +135,7 @@ export default function Footer() {
                     We make sure to only send emails that are noteworthy and
                     pertinent to the recipient.
                   </div>
-                  <form
-                    action="#"
-                    className="cs_newsletter_form"
-                  >
+                  <form action="#" className="cs_newsletter_form">
                     <input
                       type="email"
                       className="cs_newsletter_input"
@@ -164,19 +161,15 @@ export default function Footer() {
       </div>
       <div className="container">
         <div className="cs_bottom_footer">
-          <div className="cs_bottom_footer_left">
+          {/* <div className="cs_bottom_footer_left">
             <div className="cs_social_btns cs_style_1">
               {socialBtnList.map((item, index) => (
-                <Link
-                  to={item.href}
-                  className="cs_center"
-                  key={index}
-                >
+                <Link to={item.href} className="cs_center" key={index}>
                   <Icon icon={item.icon} />
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
           <div className="cs_copyright">Copyright © 2025 HEIPL.</div>
           <div className="cs_bottom_footer_right">
             <ul className="cs_footer_links cs_mp0">
