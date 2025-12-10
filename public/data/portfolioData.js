@@ -7,7 +7,7 @@ export const portfolioData = [
     client: "Government of Pakistan",
     location: "Nationwide",
     budget: "Confidential",
-    date: "August 2023",
+    date: "Ongoing",
     imgUrl: "/images/portfolio/cover/1.webp",
     gallery: [
       "/images/portfolio/proj1/1.webp",
