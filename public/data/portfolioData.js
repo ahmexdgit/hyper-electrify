@@ -35,7 +35,7 @@ export const portfolioData = [
     client: "Private Sector Partnership",
     location: "Spain",
     budget: "USD 1.2M",
-    date: "June 2023",
+    date: "Completed",
     imgUrl: "/images/portfolio/cover/2.webp",
 
     gallery: [
@@ -62,7 +62,7 @@ export const portfolioData = [
     client: "ChargePanel AB (Sweden)",
     location: "Pakistan",
     budget: "USD 4.5M",
-    date: "March 2024",
+    date: "Ongoing",
     imgUrl: "/images/portfolio/cover/3.webp",
 
     gallery: [
@@ -89,7 +89,7 @@ export const portfolioData = [
     client: "Chinese Technology Partners",
     location: "Pakistan",
     budget: "USD 12M",
-    date: "October 2023",
+    date: "Ongoing",
     imgUrl: "/images/portfolio/cover/4.webp",
 
     gallery: [
@@ -116,7 +116,7 @@ export const portfolioData = [
     client: "Private Renewable Consortium (China)",
     location: "Pakistan",
     budget: "USD 9.5M",
-    date: "July 2023",
+    date: "Ongoing",
     imgUrl: "/images/portfolio/cover/5.webp",
 
     gallery: [
@@ -142,7 +142,7 @@ export const portfolioData = [
     client: "International Islamic University Islamabad (IIUI)",
     location: "Islamabad, Pakistan",
     budget: "USD 800K",
-    date: "February 2024",
+    date: "Ongoing",
     imgUrl: "/images/portfolio/cover/6.webp",
 
     gallery: [
@@ -193,7 +193,7 @@ export const portfolioData = [
     client: "HEIPL & Partner Organizations",
     location: "Pakistan",
     budget: "Various",
-    date: "2022 – Ongoing",
+    date: "Ongoing",
     imgUrl: "/images/portfolio/cover/8.webp",
 
     gallery: [
