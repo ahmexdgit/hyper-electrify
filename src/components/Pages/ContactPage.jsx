@@ -33,7 +33,7 @@ export default function ContactPage() {
                 <li>
                   <h3 className="cs_fs_29 cs_semibold">Phone:</h3>
                   <p className="mb-0">
-                    +92 51 6107 993 | +92 51 8737 216 | +92 3285082059
+                    +92 51 6107 993 | +92 3285082059
                   </p>
                 </li>
                 <li>
@@ -42,10 +42,7 @@ export default function ContactPage() {
                     ▶ Plaza 153-A, Second Floor, Block D, Civic Centre, Bahria
                     Town, Rawalpindi
                   </p>
-                  <p className="mb-0">
-                    ▶ Office 17, First Floor, Al Hameed Plaza, G-11 Markaz,
-                    Islamabad, Pakistan
-                  </p>
+              
                 </li>
               </ul>
             </div>
